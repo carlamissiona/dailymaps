@@ -1,0 +1,549 @@
+[36m[INFO][0m 2019/04/27 12:37 (*iris.Application)(0xc4204a62d0)({
+ APIBuilder: (*router.APIBuilder)(0xc420122180)({
+  macros: (*macro.Macros)(0xd4cc80)((len=15 cap=15) {
+   (*macro.Macro)(0xc42008ed20)({
+    indent: (string) (len=6) "string",
+    alias: (string) "",
+    master: (bool) true,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) <nil>,
+    funcs: ([]macro.ParamFunc) (len=6 cap=8) {
+     (macro.ParamFunc) {
+      Name: (string) (len=6) "regexp",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=6) "prefix",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=6) "suffix",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=8) "contains",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008edc0)({
+    indent: (string) (len=3) "int",
+    alias: (string) (len=6) "number",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7bde30,
+    funcs: ([]macro.ParamFunc) (len=3 cap=4) {
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=5) "range",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008ee10)({
+    indent: (string) (len=4) "int8",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7be050,
+    funcs: ([]macro.ParamFunc) (len=3 cap=4) {
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=5) "range",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008ee60)({
+    indent: (string) (len=5) "int16",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7be270,
+    funcs: ([]macro.ParamFunc) (len=3 cap=4) {
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=5) "range",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008eeb0)({
+    indent: (string) (len=5) "int32",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7be4a0,
+    funcs: ([]macro.ParamFunc) (len=3 cap=4) {
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=5) "range",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008ef00)({
+    indent: (string) (len=5) "int64",
+    alias: (string) (len=4) "long",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7be6c0,
+    funcs: ([]macro.ParamFunc) (len=3 cap=4) {
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=5) "range",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008ef50)({
+    indent: (string) (len=4) "uint",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7be8f0,
+    funcs: ([]macro.ParamFunc) (len=3 cap=4) {
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=5) "range",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008eff0)({
+    indent: (string) (len=5) "uint8",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7beae0,
+    funcs: ([]macro.ParamFunc) (len=3 cap=4) {
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=5) "range",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008f040)({
+    indent: (string) (len=6) "uint16",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7bed00,
+    funcs: ([]macro.ParamFunc) (len=3 cap=4) {
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=5) "range",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008f090)({
+    indent: (string) (len=6) "uint32",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7beef0,
+    funcs: ([]macro.ParamFunc) (len=3 cap=4) {
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=5) "range",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008f0e0)({
+    indent: (string) (len=6) "uint64",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7bf0d0,
+    funcs: ([]macro.ParamFunc) (len=3 cap=4) {
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "min",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=3) "max",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     },
+     (macro.ParamFunc) {
+      Name: (string) (len=5) "range",
+      Func: (macro.ParamFuncBuilder) 0x7bf850
+     }
+    }
+   }),
+   (*macro.Macro)(0xc42008f130)({
+    indent: (string) (len=4) "bool",
+    alias: (string) (len=7) "boolean",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7bf2c0,
+    funcs: ([]macro.ParamFunc) <nil>
+   }),
+   (*macro.Macro)(0xc42008f1d0)({
+    indent: (string) (len=12) "alphabetical",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7bf590,
+    funcs: ([]macro.ParamFunc) <nil>
+   }),
+   (*macro.Macro)(0xc42008f270)({
+    indent: (string) (len=4) "file",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) false,
+    Evaluator: (macro.ParamEvaluator) 0x7bf650,
+    funcs: ([]macro.ParamFunc) <nil>
+   }),
+   (*macro.Macro)(0xc42008f2c0)({
+    indent: (string) (len=4) "path",
+    alias: (string) "",
+    master: (bool) false,
+    trailing: (bool) true,
+    Evaluator: (macro.ParamEvaluator) <nil>,
+    funcs: ([]macro.ParamFunc) <nil>
+   })
+  }),
+  errorCodeHandlers: (*router.ErrorCodeHandlers)(0xc4204fa980)({
+   handlers: ([]*router.ErrorCodeHandler) (len=3 cap=4) {
+    (*router.ErrorCodeHandler)(0xc4204febd0)({
+     StatusCode: (int) 404,
+     Handlers: (context.Handlers) (len=1 cap=1) {
+      (context.Handler) 0x803500
+     },
+     mu: (sync.Mutex) {
+      state: (int32) 0,
+      sema: (uint32) 0
+     }
+    }),
+    (*router.ErrorCodeHandler)(0xc4204fec00)({
+     StatusCode: (int) 405,
+     Handlers: (context.Handlers) (len=1 cap=1) {
+      (context.Handler) 0x803500
+     },
+     mu: (sync.Mutex) {
+      state: (int32) 0,
+      sema: (uint32) 0
+     }
+    }),
+    (*router.ErrorCodeHandler)(0xc4204fec30)({
+     StatusCode: (int) 500,
+     Handlers: (context.Handlers) (len=1 cap=1) {
+      (context.Handler) 0x803500
+     },
+     mu: (sync.Mutex) {
+      state: (int32) 0,
+      sema: (uint32) 0
+     }
+    })
+   }
+  }),
+  routes: (*router.repository)(0xc4204fa9c0)({
+   routes: ([]*router.Route) (len=6 cap=8) {
+    (*router.Route)(0xc42012a1c0)(HEAD /templates/*file),
+    (*router.Route)(0xc42012a2a0)(GET /templates/*file),
+    (*router.Route)(0xc42012a540)(GET /),
+    (*router.Route)(0xc42012a620)(GET /credential),
+    (*router.Route)(0xc42012a8c0)(GET /maps),
+    (*router.Route)(0xc42012a9a0)(GET /maps/credential)
+   }
+  }),
+  reverser: (*router.RoutePathReverser)(<nil>),
+  reporter: (*errors.Reporter)(0xc420491a40)(),
+  middleware: (context.Handlers) <nil>,
+  beginGlobalHandlers: (context.Handlers) <nil>,
+  doneHandlers: (context.Handlers) <nil>,
+  doneGlobalHandlers: (context.Handlers) <nil>,
+  relativePath: (string) (len=1) "/",
+  allowMethods: ([]string) <nil>,
+  handlerExecutionRules: (router.ExecutionRules) {
+   Begin: (router.ExecutionOptions) {
+    Force: (bool) false
+   },
+   Done: (router.ExecutionOptions) {
+    Force: (bool) false
+   },
+   Main: (router.ExecutionOptions) {
+    Force: (bool) false
+   }
+  }
+ }),
+ Router: (*router.Router)(0xc4201a5a00)({
+  mu: (sync.Mutex) {
+   state: (int32) 0,
+   sema: (uint32) 0
+  },
+  requestHandler: (router.RequestHandler) <nil>,
+  mainHandler: (http.HandlerFunc) <nil>,
+  wrapperFunc: (func(http.ResponseWriter, *http.Request, http.HandlerFunc)) <nil>,
+  cPool: (*context.Pool)(<nil>),
+  routesProvider: (router.RoutesProvider) <nil>
+ }),
+ ContextPool: (*context.Pool)(0xc42005fd70)({
+  pool: (*sync.Pool)(0xc4204fa9e0)({
+   noCopy: (sync.noCopy) {
+   },
+   local: (unsafe.Pointer) <nil>,
+   localSize: (uintptr) <nil>,
+   New: (func() interface {}) 0x7d0e60
+  }),
+  newFunc: (func() context.Context) 0x890c40
+ }),
+ config: (*iris.Configuration)(0xc4200c8370)({
+  vhost: (string) "",
+  IgnoreServerErrors: ([]string) <nil>,
+  DisableStartupLog: (bool) false,
+  DisableInterruptHandler: (bool) false,
+  DisablePathCorrection: (bool) false,
+  DisablePathCorrectionRedirection: (bool) false,
+  EnablePathEscape: (bool) false,
+  EnableOptimizations: (bool) false,
+  FireMethodNotAllowed: (bool) false,
+  DisableBodyConsumptionOnUnmarshal: (bool) false,
+  DisableAutoFireStatusCode: (bool) false,
+  TimeFormat: (string) (len=29) "Mon, Jan 02 2006 15:04:05 GMT",
+  Charset: (string) (len=5) "UTF-8",
+  PostMaxMemory: (int64) 33554432,
+  TranslateFunctionContextKey: (string) (len=14) "iris.translate",
+  TranslateLanguageContextKey: (string) (len=13) "iris.language",
+  ViewLayoutContextKey: (string) (len=15) "iris.viewLayout",
+  ViewDataContextKey: (string) (len=13) "iris.viewData",
+  RemoteAddrHeaders: (map[string]bool) {
+  },
+  Other: (map[string]interface {}) {
+  }
+ }),
+ logger: (*golog.Logger)(0xc420124000)({
+  Prefix: ([]uint8) <nil>,
+  Level: (golog.Level) 4,
+  TimeFormat: (string) (len=16) "2006/01/02 15:04",
+  NewLine: (bool) true,
+  mu: (sync.Mutex) {
+   state: (int32) 0,
+   sema: (uint32) 0
+  },
+  Printer: (*pio.Printer)(0xc42009ae60)({
+   Name: (string) (len=9) "printer_1",
+   IsTerminal: (bool) true,
+   priority: (int) 0,
+   Chained: (bool) false,
+   Output: (*os.File)(0xc42000e018)({
+    file: (*os.file)(0xc42008e050)({
+     pfd: (poll.FD) {
+      fdmu: (poll.fdMutex) {
+       state: (uint64) 0,
+       rsema: (uint32) 0,
+       wsema: (uint32) 0
+      },
+      Sysfd: (int) 1,
+      pd: (poll.pollDesc) {
+       runtimeCtx: (uintptr) <nil>
+      },
+      iovecs: (*[]syscall.Iovec)(<nil>),
+      csema: (uint32) 0,
+      IsStream: (bool) true,
+      ZeroReadIsEOF: (bool) true,
+      isFile: (bool) true,
+      isBlocking: (bool) true
+     },
+     name: (string) (len=11) "/dev/stdout",
+     dirinfo: (*os.dirInfo)(<nil>),
+     nonblock: (bool) false,
+     stdoutOrErr: (bool) true
+    })
+   }),
+   mu: (sync.Mutex) {
+    state: (int32) 0,
+    sema: (uint32) 0
+   },
+   marshal: (pio.MarshalerFunc) <nil>,
+   hijack: (pio.Hijacker) 0x707f50,
+   handlers: ([]pio.Handler) <nil>,
+   Reader: (*bytes.Buffer)(0xc420097960)(),
+   Writer: (*bytes.Buffer)(0xc420097960)(),
+   Closer: (*pio.nopCloser)(0xd7e5e0)({
+   }),
+   DirectOutput: (bool) true
+  }),
+  handlers: ([]golog.Handler) <nil>,
+  once: (sync.Once) {
+   m: (sync.Mutex) {
+    state: (int32) 0,
+    sema: (uint32) 0
+   },
+   done: (uint32) 0
+  },
+  logs: (sync.Pool) {
+   noCopy: (sync.noCopy) {
+   },
+   local: (unsafe.Pointer) <nil>,
+   localSize: (uintptr) <nil>,
+   New: (func() interface {}) <nil>
+  },
+  children: (*golog.loggerMap)(0xc4200fc4c0)({
+   mu: (sync.RWMutex) {
+    w: (sync.Mutex) {
+     state: (int32) 0,
+     sema: (uint32) 0
+    },
+    writerSem: (uint32) 0,
+    readerSem: (uint32) 0,
+    readerCount: (int32) 0,
+    readerWait: (int32) 0
+   },
+   Items: (map[string]*golog.Logger) {
+   }
+  })
+ }),
+ view: (view.View) {
+  engines: ([]view.Engine) (len=1 cap=1) {
+   (*view.HTMLEngine)(0xc420122300)({
+    directory: (string) (len=9) "app/views",
+    extension: (string) (len=5) ".html",
+    assetFn: (func(string) ([]uint8, error)) <nil>,
+    namesFn: (func() []string) <nil>,
+    reload: (bool) false,
+    options: ([]string) <nil>,
+    left: (string) (len=2) "{{",
+    right: (string) (len=2) "}}",
+    layout: (string) (len=21) "templates/layout.html",
+    rmu: (sync.RWMutex) {
+     w: (sync.Mutex) {
+      state: (int32) 0,
+      sema: (uint32) 0
+     },
+     writerSem: (uint32) 0,
+     readerSem: (uint32) 0,
+     readerCount: (int32) 0,
+     readerWait: (int32) 0
+    },
+    layoutFuncs: (map[string]interface {}) {
+    },
+    funcs: (map[string]interface {}) {
+    },
+    middleware: (func(string, []uint8) (string, error)) <nil>,
+    Templates: (*template.Template)(<nil>)
+   })
+  }
+ },
+ once: (sync.Once) {
+  m: (sync.Mutex) {
+   state: (int32) 0,
+   sema: (uint32) 0
+  },
+  done: (uint32) 0
+ },
+ mu: (sync.Mutex) {
+  state: (int32) 0,
+  sema: (uint32) 0
+ },
+ Hosts: ([]*host.Supervisor) <nil>,
+ hostConfigurators: ([]host.Configurator) <nil>
+})
+
+[36m[INFO][0m 2019/04/27 12:37  hi hiwwww hi app 
+[36m[INFO][0m 2019/04/27 12:37 &{842351649152 842352187904 842350853488 842351281008 842351656960 {[842351649536]} {{0 0} 0} {0 0} [] []}
+Now listening on: http://localhost:8090
+Application started. Press CTRL+C to shut down.
+[36m[INFO][0m 2019/04/27 12:38 Maps controller false
+[36m[INFO][0m 2019/04/27 12:38 Maps controller hihi
+[36m[INFO][0m 2019/04/27 12:38 Maps controller true
+[36m[INFO][0m 2019/04/27 12:38 Maps controller hihi
+[36m[INFO][0m 2019/04/27 12:38 Maps controller false
+[36m[INFO][0m 2019/04/27 12:38 Maps controller hihi
+[36m[INFO][0m 2019/04/27 12:38 Maps controller true
+[36m[INFO][0m 2019/04/27 12:38 Maps controller hihi
+[36m[INFO][0m 2019/04/27 14:21 Maps controller false
+[36m[INFO][0m 2019/04/27 14:21 Maps controller hihi
+[36m[INFO][0m 2019/04/27 14:21 Maps controller true
+[36m[INFO][0m 2019/04/27 14:21 Maps controller hihi
+[36m[INFO][0m 2019/04/27 16:04 Maps controller false
+[36m[INFO][0m 2019/04/27 16:04 Maps controller hihi
+[36m[INFO][0m 2019/04/27 16:04 Maps controller true
+[36m[INFO][0m 2019/04/27 16:04 Maps controller hihi
+# dailymaps/app/controllers
+app/controllers/basecontroller.go:26:7: no new variables on left side of :=
+app/controllers/basecontroller.go:26:10: undefined: sess
+app/controllers/basecontroller.go:26:21: undefined: ctx
+app/controllers/basecontroller.go:27:4: s.Set undefined (type HttpUtil has no field or method Set)
+app/controllers/basecontroller.go:32:13: undefined: sess
+app/controllers/basecontroller.go:36:1: missing return at end of function
+app/controllers/basecontroller.go:40:4: non-name s.sess on left side of :=
+app/controllers/basecontroller.go:42:14: undefined: time
+app/controllers/basecontroller.go:45:1: missing return at end of function
+app/controllers/rest.go:16:5: (*HomeController).Get redeclared in this block
+	previous declaration at app/controllers/home.go:15:5
+app/controllers/basecontroller.go:45:1: too many errors

@@ -4,10 +4,11 @@ package controllers
 import (
   "github.com/kataras/golog"
 	"github.com/kataras/iris/mvc"
+  
 
 )
 
-type HomeController struct {
+type ApiController struct {
 		HttpUtil
 
 }
@@ -17,7 +18,7 @@ func(c *HomeController) Get() mvc.Result {
   golog.Info("controller")
 	return mvc.View {
 		Name: "home.html",
-    
+
 	}
 
 }

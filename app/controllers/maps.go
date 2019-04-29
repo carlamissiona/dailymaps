@@ -9,17 +9,24 @@ import (
 )
 
 type MapsController struct {
-		Helpers  BaseController
+    HttpUtil
+    isCacheable bool
 
 }
 
 func(c *MapsController) Get() mvc.Result {
 	// set the model and render the view template.
+ c.cookiename = "hihi"
+ c.isCacheable = false
+ golog.Infof("Maps controller %v",c.isCacheable)
+ golog.Infof("Maps controller %v",c.cookiename)
+ golog.Infof("Maps controller %v",c.IsLogin() )
+ golog.Infof("Maps controller %v",c.cookiename)
 
-  golog.Infof("Maps controller %v",true)
+
 	return mvc.View {
 		Name: "maps.html",
-    Data: iris.Map{"Title": "Maps List", "isLogin":"true" },
+    Data: iris.Map{"Title": "Maps List", "isLogin": c.cookiename },
 	}
 
 
