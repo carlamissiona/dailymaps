@@ -4,7 +4,7 @@ package controllers
 import (
   "github.com/kataras/golog"
 	"github.com/kataras/iris/mvc"
-  
+
 
 )
 
@@ -13,7 +13,7 @@ type ApiController struct {
 
 }
 
-func(c *HomeController) Get() mvc.Result {
+func(c *ApiController) Get() mvc.Result {
 	// set the model and render the view template.
   golog.Info("controller")
 	return mvc.View {

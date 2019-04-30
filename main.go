@@ -14,7 +14,6 @@ func startApp() *iris.Application {
 	app.StaticWeb("/templates", "./app/views/templates")
 
 	str := spew.Sdump(app)
-
 	golog.Infof(str)
 
 

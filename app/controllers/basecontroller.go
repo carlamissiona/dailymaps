@@ -2,6 +2,8 @@ package controllers
 import (
 	"github.com/kataras/iris/sessions"
 	"github.com/kataras/iris"
+	"github.com/kataras/golog"
+	"github.com/davecgh/go-spew/spew"
 )
 
 type IUtil interface  {
@@ -9,55 +11,69 @@ type IUtil interface  {
   GetCredential(user string, pass string) bool
   Page404()   bool
   PageError() bool
-  SetCookie(c *iris.Context) bool
+  SetCookie() bool
+	ConfigSession() bool
 }
 
 
 type HttpUtil struct {
     username       string
     cookiename     string
-    pgsession        *sessions.Sessions
+    pgsess         *sessions.Session
+		contx					 *iris.Context
 }
 
 
 
-func (s HttpUtil) IsLogin() bool {
+func (s *HttpUtil) IsLogin() bool {
 
-    s := sess.Start(ctx)
-		s.Set("dmlogin", "trueauth")
-    return true
-}
-
-func DoLogout(ctx iris.Context) bool {
-	session := sess.Start(ctx)
-
-	// Revoke users authentication
-	session.Set("authenticated", false)
-}
-
-func (s HttpUtil) ConfigCookie()  bool {
-
-  s.sess := sessions.New(sessions.Config{
-    Cookie: "dailymapsid",
-    Expires: time.Hour * 2,
-	})
-
-}
-func (s HttpUtil) GetCredential(user string, pass string)  bool {
+		str := spew.Sdump(s.contx)
+		golog.Info("Object httputil %v",str)
 
     return true
 }
+//
+// func (s *HttpUtil) DoLogout(ctx iris.Context) bool {
+//
+// 	if auth, _ := s.pgsess.GetBoolean("dmlogin"); !auth {
+// 		ctx.StatusCode(iris.StatusForbidden)
+// 		return true
+// 	}
+// 	// do logout
+// 	s.pgsess.Delete("dmlogin");
+// 	return true
+//
+//
+// }
 
+// func  (s *HttpUtil) ConfigSession(ctx iris.Context)  bool {
+//
+// 	  s.pgsess = sessions.New(sessions.Config{
+// 	    Cookie: "dailymapsid",
+// 	    Expires: time.Hour * 2,
+// 		})
+//
+// 		str := spew.Sdump(s)
+// 		golog.Info("Object httputil %v",str)
+//
+// 		s.pgsess.Start(ctx).Set("dmlogin", "true_auth")
+// 		return false
+//
+// }
 
-func (s HttpUtil) Page404() bool {
+func (s *HttpUtil) GetCredential(user string, pass string)  bool {
 
-    //s.cookiename =
     return true
 }
 
 
-func (s HttpUtil) PageError() bool {
+func (s *HttpUtil) Page404() bool {
 
-    //s.cookiename =
+    return true
+}
+
+
+func (s *HttpUtil) PageError() bool {
+
     return true
 }
