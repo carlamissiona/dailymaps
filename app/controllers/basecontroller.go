@@ -4,13 +4,17 @@ import (
 	"github.com/kataras/iris"
 	"github.com/kataras/golog"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/kataras/iris/mvc"
+	"github.com/go-xorm/xorm"
+ _"github.com/go-sql-driver/mysql"
+
 )
 
 type IUtil interface  {
   IsLogin() bool
-  GetCredential(user string, pass string) bool
+  PullCredential(user string, pass string) bool
   Page404()   bool
-  PageError() bool
+  PageError() mvc.View
   SetCookie() bool
 	ConfigSession() bool
 }
@@ -21,6 +25,7 @@ type HttpUtil struct {
     cookiename     string
     pgsess         *sessions.Session
 		contx					 *iris.Context
+		dbhelper		   *xorm.Engine
 }
 
 
@@ -28,10 +33,13 @@ type HttpUtil struct {
 func (s *HttpUtil) IsLogin() bool {
 
 		str := spew.Sdump(s.contx)
+		str2 := spew.Sdump(s.pgsess)
 		golog.Info("Object httputil %v",str)
+		golog.Info("Object httputil %v",str2)
 
     return true
 }
+
 //
 // func (s *HttpUtil) DoLogout(ctx iris.Context) bool {
 //
@@ -61,7 +69,7 @@ func (s *HttpUtil) IsLogin() bool {
 //
 // }
 
-func (s *HttpUtil) GetCredential(user string, pass string)  bool {
+func (s *HttpUtil) PullCredential(user string, pass string)  bool {
 
     return true
 }
@@ -73,7 +81,10 @@ func (s *HttpUtil) Page404() bool {
 }
 
 
-func (s *HttpUtil) PageError() bool {
+func (s *HttpUtil) PageError() mvc.View {
 
-    return true
+	return mvc.View {
+		Name: "error.html",
+
+	}
 }
